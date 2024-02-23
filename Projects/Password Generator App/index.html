@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w-svw h-svh bg-gradient-to-b from-purple-500 to-[#1C1D3B]  flex justify-center items-center">
+
+    <div class="w-[600px] h-auto px-10 pt-10 pb-3 border-2 border-black rounded-lg">
+
+        <h1 class="text-4xl text-black font-semibold text-center my-2">Password Generator</h1>
+
+        <span id="preview" class="w-[500px] h-10 block bg-transparent text-xl text-center font-semibold my-5 mx-3 pt-1 border border-black rounded-md">Click on Generate button</span>
+
+        <button id="generate-btn" class="bg-transparent text-black font-bold px-7 py-2 border border-black rounded-md ml-[109px]">Generate</button>
+
+        <button id="copy-btn" class="bg-transparent text-black font-bold px-4 py-2 border border-black rounded-md">Copy To Clipboard</button>
+
+        <div class="py-10">
+
+            <label for="p-Length" class="text-black text-xl font-bold ml-3">Password Length</label>
+            <input type="text" id="p-Length" class="w-20 h-8 bg-transparent border border-black rounded ml-[255px] my-3 pl-3 text-black font-semibold text-lg outline-none">
+
+            <label for="upper-case" class="text-black text-xl font-bold ml-3">Include Uppercase Letters</label>
+            <input type="checkbox" id="upper-case" class="w-5 h-5 ml-[231px] my-3 outline outline-1">
+
+            <label for="lower-case" class="text-black text-xl font-bold ml-3">Include Lowercase Letters</label>
+            <input type="checkbox" id="lower-case" class="w-5 h-5 ml-[232px] my-3 outline outline-1">
+
+            <label for="numbers" class="text-black text-xl font-bold ml-3">Include Numbers</label>
+            <input type="checkbox" id="numbers" class="w-5 h-5 ml-[313px] my-3 outline outline-1">
+
+            <label for="symbols" class="text-black text-xl font-bold ml-3">Include Symbols</label>
+            <input type="checkbox" id="symbols" class="w-5 h-5 ml-[320px] my-3 outline outline-1">
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
